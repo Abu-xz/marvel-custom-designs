@@ -50,15 +50,6 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 section-container flex flex-col items-center text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <span className="inline-block py-1 px-3 rounded-full bg-marvel-red/10 border border-marvel-red/20 text-marvel-red text-sm font-medium mb-6">
-            Premium Web Experiences
-          </span>
-        </motion.div>
 
         <motion.h1
           className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight"
@@ -68,6 +59,7 @@ const Hero = () => {
         >
           Craft <span className="text-marvel-red text-glow">Bold</span> Digital <br className="hidden md:block" />
           Experiences That <span className="text-marvel-red text-glow">Matter</span>
+         
         </motion.h1>
 
         <motion.p
@@ -107,35 +99,6 @@ const Hero = () => {
           </Link>
         </motion.div>
 
-        {/* Scroll indicator */}
-        <motion.div
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ 
-            duration: 0.5, 
-            delay: 1, 
-            repeat: Infinity, 
-            repeatType: "reverse" 
-          }}
-        >
-          <div className="flex flex-col items-center">
-            <span className="text-white/50 text-sm mb-2">Scroll to explore</span>
-            <div className="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center pt-2">
-              <motion.div 
-                className="w-1.5 h-1.5 bg-marvel-red rounded-full"
-                animate={{ 
-                  y: [0, 15, 0],
-                }}
-                transition={{ 
-                  duration: 1.5, 
-                  repeat: Infinity,
-                  repeatType: "loop"
-                }}
-              />
-            </div>
-          </div>
-        </motion.div>
       </div>
     </div>
   );
