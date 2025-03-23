@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 3%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 84% 50%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 16%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 0% 16%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 84% 50%;
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border selection:bg-white/10 selection:text-white;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased overflow-x-hidden min-h-screen;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply backdrop-blur-lg bg-white/5 border border-white/10 shadow-xl;
+  }
+  
+  .marvel-card {
+    @apply relative overflow-hidden bg-marvel-gray rounded-xl border border-marvel-light-gray/50 hover:border-marvel-red/50 transition-all duration-300;
+  }
+  
+  .marvel-card:before {
+    content: "";
+    @apply absolute inset-0 bg-gradient-to-br from-marvel-red/5 to-transparent opacity-0 transition-opacity duration-300;
+  }
+  
+  .marvel-card:hover:before {
+    @apply opacity-100;
+  }
+  
+  .marvel-button {
+    @apply relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-white bg-marvel-red rounded-lg transition-all duration-300 hover:bg-marvel-red/90;
+  }
+  
+  .marvel-button-outline {
+    @apply relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-marvel-red border border-marvel-red rounded-lg transition-all duration-300 hover:bg-marvel-red/10;
+  }
+  
+  .section-container {
+    @apply max-w-7xl mx-auto px-6 md:px-8 py-16 md:py-24;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-display font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80;
+  }
+  
+  .section-subtitle {
+    @apply text-xl font-medium text-white/70 mb-12 max-w-2xl;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(227, 30, 36, 0.5);
+  }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 400ms, transform 400ms;
+}
+
+.page-transition-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms, transform 300ms;
+}
