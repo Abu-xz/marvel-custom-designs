@@ -1,10 +1,10 @@
 
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
+ 
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background gradient */}
@@ -15,26 +15,28 @@ const Hero = () => {
       {/* Animated background elements */}
       <div className="absolute inset-0 z-0">
         {[...Array(5)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute bg-marvel-red/10 rounded-full blur-3xl"
-            style={{
-              width: Math.random() * 400 + 200,
-              height: Math.random() * 400 + 200,
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-            animate={{
-              x: [0, Math.random() * 40 - 20],
-              y: [0, Math.random() * 40 - 20],
-            }}
-            transition={{
-              duration: Math.random() * 10 + 10,
-              repeat: Infinity,
-              repeatType: 'reverse',
-              ease: 'easeInOut',
-            }}
-          />
+         <motion.div
+         key={i}
+         className="absolute bg-marvel-red/10 rounded-full blur-3xl"
+         style={{
+           width: 200 + Math.random() * 400, // Width between 200-600px
+           height: 200 + Math.random() * 400, // Height between 200-600px
+           left: `${Math.random() * 80 + 10}%`, // Keeps it inside the viewport
+           top: `${Math.random() * 80 + 10}%`, // Keeps it inside the viewport
+         }}
+         animate={{
+           x: [0, Math.random() * 40 - 20], // Moves slightly left/right
+           y: [0, Math.random() * 40 - 20], // Moves slightly up/down
+           opacity: [0.8, 1, 0.8], // Smooth opacity pulsing effect
+         }}
+         transition={{
+           duration: 10 + Math.random() * 5, // 10-15s duration
+           repeat: Infinity,
+           repeatType: "mirror",
+           ease: "easeInOut",
+         }}
+       />
+       
         ))}
       </div>
 

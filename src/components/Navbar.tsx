@@ -114,7 +114,8 @@ const Navbar = () => {
               </Link>
             </motion.div>
           ))}
-          <motion.div
+          {/* Get start Button */}
+          {/* <motion.div
             custom={navLinks.length}
             variants={linkVariants}
             initial="hidden"
@@ -126,7 +127,7 @@ const Navbar = () => {
             >
               Get Started
             </Link>
-          </motion.div>
+          </motion.div> */}
         </nav>
 
         <div className="md:hidden">
