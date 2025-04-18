@@ -93,11 +93,8 @@ VITE_API_URL=your_api_url
 ---
 
 ## **📝 License**  
-This project is **open-source** under the **MIT License**.  
+This project is **open-source** under the **MIT License**.
 
 ---
 
 Let me know if you need any modifications! 🚀🔥
-
-
-hai abbas
