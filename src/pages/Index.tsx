@@ -33,10 +33,10 @@ const Index = () => {
   ];
 
   const stats = [
-    { number: '10+', label: 'Years Experience' },
-    { number: '200+', label: 'Projects Completed' },
-    { number: '50+', label: 'Happy Clients' },
-    { number: '15', label: 'Design Awards' }
+    { number: '2', label: 'Years Experience' },
+    { number: '100+', label: 'Projects Completed' },
+    { number: '70+', label: 'Happy Clients' },
+    { number: '20+', label: 'Staffs' }
   ];
 
   return (
@@ -229,7 +229,7 @@ const Index = () => {
               Let's work together to create a stunning website that represents your brand and drives results.
             </p>
             <Link to="/contact" className="marvel-button text-lg px-8 py-4">
-              Start Your Project
+              Start Building Your Project
             </Link>
           </motion.div>
         </div>
