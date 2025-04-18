@@ -1,58 +1,52 @@
-
-import React from 'react';
-import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Clock, MessageSquare, Instagram, Twitter, Facebook, Linkedin } from 'lucide-react';
-import ContactForm from '../components/ContactForm';
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  MessageSquare,
+  Instagram,
+  Twitter,
+  Facebook,
+  Linkedin,
+} from "lucide-react";
+import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   const pageVariants = {
     initial: { opacity: 0 },
     animate: { opacity: 1, transition: { duration: 0.5 } },
-    exit: { opacity: 0, transition: { duration: 0.3 } }
+    exit: { opacity: 0, transition: { duration: 0.3 } },
   };
 
   const contactInfo = [
     {
-      icon: <MapPin className="text-marvel-red" size={24} />,
-      title: 'Our Location',
-      details: [
-        '123 Design Street',
-        'Creative City, CA 90210',
-        'United States'
-      ]
-    },
-    {
       icon: <Phone className="text-marvel-red" size={24} />,
-      title: 'Phone',
-      details: [
-        '+1 (555) 123-4567',
-        '+1 (555) 987-6543'
-      ]
+      title: "Phone",
+      details: ["+91 8301898610"],
     },
     {
       icon: <Mail className="text-marvel-red" size={24} />,
-      title: 'Email',
-      details: [
-        'info@marveldesigns.com',
-        'support@marveldesigns.com'
-      ]
+      title: "Email",
+      details: ["contact@marveldesigns.com"],
     },
     {
       icon: <Clock className="text-marvel-red" size={24} />,
-      title: 'Working Hours',
+      title: "Working Hours",
       details: [
-        'Monday - Friday: 9AM - 6PM',
-        'Saturday: 10AM - 4PM',
-        'Sunday: Closed'
-      ]
-    }
+        "Monday - Friday: 9AM - 6PM",
+        "Saturday: 10AM - 4PM",
+        "Sunday: Closed",
+      ],
+    },
   ];
 
   const socialLinks = [
-    { icon: <Instagram size={20} />, name: 'Instagram', url: '#' },
-    { icon: <Twitter size={20} />, name: 'Twitter', url: '#' },
-    { icon: <Facebook size={20} />, name: 'Facebook', url: '#' },
-    { icon: <Linkedin size={20} />, name: 'LinkedIn', url: '#' }
+    { icon: <Instagram size={20} />, name: "Instagram", url: "#" },
+    { icon: <Twitter size={20} />, name: "Twitter", url: "#" },
+    { icon: <Facebook size={20} />, name: "Facebook", url: "#" },
+    { icon: <Linkedin size={20} />, name: "LinkedIn", url: "#" },
   ];
 
   return (
@@ -93,7 +87,8 @@ const Contact = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Have a project in mind? We'd love to hear about it. Get in touch with our team to discuss how we can help bring your vision to life.
+            Have a project in mind? We'd love to hear about it. Get in touch
+            with our team to discuss how we can help bring your vision to life.
           </motion.p>
         </div>
       </section>
@@ -110,15 +105,18 @@ const Contact = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <h2 className="text-3xl font-display font-bold text-white mb-4">Send Us a Message</h2>
+                <h2 className="text-3xl font-display font-bold text-white mb-4">
+                  Send Us a Message
+                </h2>
                 <p className="text-white/70">
-                  Fill out the form below, and we'll get back to you as soon as possible.
+                  Fill out the form below, and we'll get back to you as soon as
+                  possible.
                 </p>
               </motion.div>
-              
+
               <ContactForm />
             </div>
-            
+
             {/* Contact Information */}
             <div>
               <motion.div
@@ -127,13 +125,16 @@ const Contact = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <h2 className="text-3xl font-display font-bold text-white mb-4">Contact Information</h2>
+                <h2 className="text-3xl font-display font-bold text-white mb-4">
+                  Contact Information
+                </h2>
                 <p className="text-white/70">
-                  Reach out to us directly using any of the contact methods below.
+                  Reach out to us directly using any of the contact methods
+                  below.
                 </p>
               </motion.div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+
+              <div className="space-y-6 mb-10">
                 {contactInfo.map((item, index) => (
                   <motion.div
                     key={index}
@@ -147,10 +148,14 @@ const Contact = () => {
                         {item.icon}
                       </div>
                       <div>
-                        <h3 className="text-lg font-medium text-white mb-2">{item.title}</h3>
+                        <h3 className="text-lg font-medium text-white mb-2">
+                          {item.title}
+                        </h3>
                         <div className="space-y-1">
                           {item.details.map((detail, i) => (
-                            <p key={i} className="text-white/70">{detail}</p>
+                            <p key={i} className="text-white/70">
+                              {detail}
+                            </p>
                           ))}
                         </div>
                       </div>
@@ -158,14 +163,16 @@ const Contact = () => {
                   </motion.div>
                 ))}
               </div>
-              
+
               {/* Social Media */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
-                <h3 className="text-xl font-medium text-white mb-4">Follow Us</h3>
+                <h3 className="text-xl font-medium text-white mb-4">
+                  Follow Us
+                </h3>
                 <div className="flex space-x-4">
                   {socialLinks.map((social, index) => (
                     <motion.a
@@ -186,27 +193,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="bg-marvel-dark-gray py-16">
-        <div className="section-container">
-          <motion.div
-            className="marvel-card overflow-hidden rounded-xl h-96"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            <div className="w-full h-full bg-marvel-gray/50 flex items-center justify-center">
-              <div className="text-center p-8">
-                <MessageSquare className="w-12 h-12 text-marvel-red mb-4 mx-auto" />
-                <p className="text-white/90 font-medium">Interactive Map</p>
-                <p className="text-white/50 text-sm mt-1">Google Maps embed would appear here</p>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
       {/* FAQ Section */}
       <section className="bg-marvel-black py-20">
         <div className="section-container">
@@ -222,26 +208,30 @@ const Contact = () => {
               Find answers to common questions about our services and process.
             </p>
           </motion.div>
-          
+
           <div className="max-w-3xl mx-auto">
             <div className="space-y-6">
               {[
                 {
                   question: "What is your typical process for a new project?",
-                  answer: "Our process begins with an initial consultation to understand your needs and goals. We then develop a proposal outlining scope, timeline, and budget. Once approved, we move into design, development, testing, and launch phases, with client feedback at each stage."
+                  answer:
+                    "Our process begins with an initial consultation to understand your needs and goals. We then develop a proposal outlining scope, timeline, and budget. Once approved, we move into design, development, testing, and launch phases, with client feedback at each stage.",
                 },
                 {
                   question: "How long does it take to complete a website?",
-                  answer: "Project timelines vary based on complexity and scope. A basic website might take 4-6 weeks, while more complex projects with custom features can take 2-4 months. We'll provide a detailed timeline during our initial consultation."
+                  answer:
+                    "Project timelines vary based on complexity and scope. A basic website might take 4-6 weeks, while more complex projects with custom features can take 2-4 months. We'll provide a detailed timeline during our initial consultation.",
                 },
                 {
                   question: "Do you offer maintenance services after launch?",
-                  answer: "Yes, we offer various maintenance packages to keep your website secure, updated, and performing optimally. These can include regular updates, security monitoring, content changes, and technical support."
+                  answer:
+                    "Yes, we offer various maintenance packages to keep your website secure, updated, and performing optimally. These can include regular updates, security monitoring, content changes, and technical support.",
                 },
                 {
                   question: "What information do you need to start a project?",
-                  answer: "To get started, we need your business information, project goals, target audience details, content (text, images, videos), brand guidelines if available, and examples of websites you like. We'll guide you through this process during our initial consultation."
-                }
+                  answer:
+                    "To get started, we need your business information, project goals, target audience details, content (text, images, videos), brand guidelines if available, and examples of websites you like. We'll guide you through this process during our initial consultation.",
+                },
               ].map((faq, index) => (
                 <motion.div
                   key={index}
@@ -253,13 +243,37 @@ const Contact = () => {
                 >
                   <details className="group">
                     <summary className="flex items-center justify-between p-6 cursor-pointer">
-                      <h3 className="text-lg font-medium text-white">{faq.question}</h3>
+                      <h3 className="text-lg font-medium text-white">
+                        {faq.question}
+                      </h3>
                       <span className="relative flex-shrink-0 ml-1.5 w-5 h-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="absolute transition-all duration-300 opacity-100 group-open:opacity-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="absolute transition-all duration-300 opacity-100 group-open:opacity-0"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                          />
                         </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" className="absolute transition-all duration-300 opacity-0 group-open:opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M18 12H6" />
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="absolute transition-all duration-300 opacity-0 group-open:opacity-100"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M18 12H6"
+                          />
                         </svg>
                       </span>
                     </summary>
