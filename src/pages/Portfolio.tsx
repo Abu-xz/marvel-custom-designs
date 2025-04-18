@@ -15,59 +15,107 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: 'Futuristic E-commerce Platform',
-      category: 'Web Development',
-      imageSrc: 'placeholder.svg',
-      description: 'A cutting-edge e-commerce platform with advanced product visualization and seamless checkout experience.',
-      tags: ['React', 'Node.js', 'Three.js', 'Stripe'],
-      filter: 'web'
-    },
+      title: '3D Render',
+      category: '3D Modeling',
+      imageSrc: '/3d_modeling.png',
+      description: 'We provide all kinds of 3D modeling and rendering services including products, architecture, and concept designs.',
+      tags: ['Blender', '3ds Max', 'Rendering'],
+      filter: '3d'
+    },    
     {
       id: 2,
-      title: 'Corporate Identity Redesign',
+      title: 'Telegram Bot',
+      category: 'Bot Development',
+      imageSrc: '/bot_development',
+      description: 'We build various custom bots for platforms like Telegram to automate tasks, manage users, or handle orders.',
+      tags: ['Python', 'Telegram API', 'Automation'],
+      filter: 'bot'
+    },
+    {
+      id: 3,
+      title: 'Brand Identity',
       category: 'Branding',
       imageSrc: 'placeholder.svg',
-      description: 'Complete brand overhaul for a tech company, including logo design, color palette, and brand guidelines.',
+      description: 'We handle all kinds of branding projects including brand strategy, logo creation, and visual identity design.',
       tags: ['Logo Design', 'Brand Strategy', 'Visual Identity'],
       filter: 'branding'
     },
     {
-      id: 3,
-      title: 'Interactive Product Showcase',
-      category: '3D Modeling',
-      imageSrc: 'placeholder.svg',
-      description: 'Interactive 3D models allowing users to explore product features through an immersive digital experience.',
-      tags: ['Blender', 'WebGL', 'Interactive Design'],
-      filter: '3d'
-    },
-    {
       id: 4,
-      title: 'Financial Dashboard',
-      category: 'UI/UX Design',
+      title: 'Brochure Design',
+      category: 'Brochure',
       imageSrc: 'placeholder.svg',
-      description: 'Intuitive financial dashboard with data visualization and user-friendly interface for tracking investments.',
-      tags: ['UI Design', 'Data Visualization', 'User Research'],
-      filter: 'ui'
+      description: 'We design brochures of all types – bi-fold, tri-fold, catalogs – for both digital and print use.',
+      tags: ['InDesign', 'Typography', 'Print Design'],
+      filter: 'brochure'
     },
     {
       id: 5,
-      title: 'Mobile Application',
-      category: 'App Development',
+      title: 'Data Entry Services',
+      category: 'Data Entry',
       imageSrc: 'placeholder.svg',
-      description: 'Cross-platform mobile application for fitness tracking with social features and personalized coaching.',
-      tags: ['React Native', 'Firebase', 'UX Design'],
-      filter: 'app'
+      description: 'We take up all types of data entry tasks with accuracy and speed, including Excel automation and form processing.',
+      tags: ['Excel', 'Macros', 'VBA'],
+      filter: 'data'
     },
     {
       id: 6,
-      title: 'Architectural Visualization',
-      category: '3D Modeling',
+      title: 'FiveM Development',
+      category: 'FiveM Development',
       imageSrc: 'placeholder.svg',
-      description: 'Photorealistic 3D renderings of architectural spaces for a luxury real estate development.',
-      tags: ['3D Modeling', 'Rendering', 'Visualization'],
-      filter: '3d'
+      description: 'We offer full FiveM server development including scripting, customization, and roleplay setups.',
+      tags: ['Lua', 'FiveM', 'GTA V Mods'],
+      filter: 'fivem'
+    },
+    {
+      id: 7,
+      title: 'Logo Designs',
+      category: 'Logo Design',
+      imageSrc: 'placeholder.svg',
+      description: 'We design logos for all kinds of brands, businesses, and events, tailored to your identity.',
+      tags: ['Illustrator', 'Brand Identity', 'Vector Design'],
+      filter: 'logo'
+    },
+    {
+      id: 8,
+      title: 'Packet Design',
+      category: 'Packet Design',
+      imageSrc: 'placeholder.svg',
+      description: 'We design attractive and informative packet/packaging designs for any kind of product.',
+      tags: ['Packaging Design', 'Illustrator', 'Branding'],
+      filter: 'packet'
+    },
+    {
+      id: 9,
+      title: 'Poster Design',
+      category: 'Poster Designing',
+      imageSrc: 'placeholder.svg',
+      description: 'We create posters for events, advertisements, awareness campaigns, and more.',
+      tags: ['Photoshop', 'Layout Design', 'Creative Direction'],
+      filter: 'poster'
+    },
+    {
+      id: 10,
+      title: 'UI/UX Design',
+      category: 'UI/UX',
+      imageSrc: 'placeholder.svg',
+      description: 'We design user-friendly interfaces and engaging user experiences for websites and mobile apps.',
+      tags: ['Figma', 'User Flow', 'Wireframing'],
+      filter: 'ui'
+    },
+    {
+      id: 11,
+      title: 'Website Development',
+      category: 'Web Development',
+      imageSrc: 'placeholder.svg',
+      description: 'We build websites of all types – portfolios, e-commerce, business sites – with responsive and modern designs.',
+      tags: ['HTML', 'CSS', 'JavaScript', 'React'],
+      filter: 'web'
     }
   ];
+  
+  
+  
 
   const filteredProjects = activeFilter === 'all' 
     ? projects 
