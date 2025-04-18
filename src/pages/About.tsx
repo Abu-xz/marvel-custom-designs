@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { CheckCircle2, BarChart, Users, Lightbulb, Award, Target, ChevronRight } from 'lucide-react';
+import { Palette, BarChart, Users, Lightbulb, Rocket,Award,Timer, Target,SmilePlus, ChevronRight, } from 'lucide-react';
 
 const About = () => {
   const pageVariants = {
@@ -20,53 +20,53 @@ const About = () => {
     }
   };
 
-  const team = [
-    {
-      name: 'Alex Johnson',
-      role: 'Founder & Creative Director',
-      bio: 'With over 15 years of experience in design and development, Alex leads our creative vision and strategy.',
-      imageSrc: 'placeholder.svg'
-    },
-    {
-      name: 'Sarah Thompson',
-      role: 'UI/UX Design Lead',
-      bio: 'Sarah combines artistic talent with a deep understanding of user behavior to create intuitive digital experiences.',
-      imageSrc: 'placeholder.svg'
-    },
-    {
-      name: 'David Chen',
-      role: 'Senior Developer',
-      bio: 'David brings technical expertise and problem-solving skills to transform designs into seamless functional websites.',
-      imageSrc: 'placeholder.svg'
-    },
-    {
-      name: 'Maya Rodriguez',
-      role: '3D Modeling Specialist',
-      bio: 'Maya creates stunning 3D visualizations that add depth and dimension to our clients\' digital presence.',
-      imageSrc: 'placeholder.svg'
-    }
-  ];
+  // const team = [
+  //   {
+  //     name: 'Alex Johnson',
+  //     role: 'Founder & Creative Director',
+  //     bio: 'With over 15 years of experience in design and development, Alex leads our creative vision and strategy.',
+  //     imageSrc: 'placeholder.svg'
+  //   },
+  //   {
+  //     name: 'Sarah Thompson',
+  //     role: 'UI/UX Design Lead',
+  //     bio: 'Sarah combines artistic talent with a deep understanding of user behavior to create intuitive digital experiences.',
+  //     imageSrc: 'placeholder.svg'
+  //   },
+  //   {
+  //     name: 'David Chen',
+  //     role: 'Senior Developer',
+  //     bio: 'David brings technical expertise and problem-solving skills to transform designs into seamless functional websites.',
+  //     imageSrc: 'placeholder.svg'
+  //   },
+  //   {
+  //     name: 'Maya Rodriguez',
+  //     role: '3D Modeling Specialist',
+  //     bio: 'Maya creates stunning 3D visualizations that add depth and dimension to our clients\' digital presence.',
+  //     imageSrc: 'placeholder.svg'
+  //   }
+  // ];
 
   const values = [
     {
-      icon: <CheckCircle2 className="text-marvel-red" size={24} />,
-      title: 'Quality',
-      description: 'We never compromise on quality, delivering excellence in every project we undertake.'
+      icon: <Palette className="text-marvel-red" size={24} />,
+      title: 'Creativity',
+      description: 'We believe in pushing boundaries and delivering original, impactful designs that stand out.'
     },
     {
-      icon: <Lightbulb className="text-marvel-red" size={24} />,
+      icon: <Rocket className="text-marvel-red" size={24} />,
       title: 'Innovation',
-      description: 'We constantly explore new technologies and creative approaches to push the boundaries of digital design.'
+      description: 'We embrace cutting-edge technologies and solutions, keeping your projects ahead of the curve.'
     },
     {
-      icon: <Users className="text-marvel-red" size={24} />,
-      title: 'Collaboration',
-      description: 'We believe in the power of teamwork and close collaboration with our clients throughout the process.'
+      icon: <SmilePlus className="text-marvel-red" size={24} />,
+      title: 'Quality',
+      description: 'We are committed to delivering exceptional work, ensuring every detail meets the highest standards.'
     },
     {
-      icon: <Target className="text-marvel-red" size={24} />,
-      title: 'Results-Driven',
-      description: 'We focus on creating solutions that not only look great but also achieve your business objectives.'
+      icon: <Timer className="text-marvel-red" size={24} />,
+      title: 'Reliability',
+      description: 'Deadlines matter. We deliver on time, every time without compromising on quality.'
     }
   ];
 
@@ -94,11 +94,12 @@ const About = () => {
               </span>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight">
-                We Are <span className="text-marvel-red">Marvel</span> Designs
+              <span className="text-marvel-red"> Marvel </span> Custom Designs
               </h1>
               
               <p className="text-xl text-white/70 mb-8">
-                A passionate team of designers and developers dedicated to crafting exceptional digital experiences that drive results.
+              Marvel Customs is a creative and innovative digital studio founded on February 22, 2023, We specialize in delivering high-quality design and development services across various platforms. With a passion for creativity and a commitment to excellence, 
+              we bring bold ideas to life through custom 3D visuals, seamless user interfaces, and powerful web and gaming solutions.
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -165,11 +166,12 @@ const About = () => {
               <div className="relative">
                 <div className="aspect-square rounded-xl overflow-hidden marvel-card">
                   <div className="w-full h-full bg-marvel-gray/30 flex items-center justify-center">
-                    <div className="text-center p-8">
+                  <img src="/marvel_logo.png" alt="marvelcustomdesign"/>
+                    {/* <div className="text-center p-8">
                       <Award className="w-12 h-12 text-marvel-red mb-4 mx-auto" />
                       <p className="text-white/90 font-medium">Our Journey</p>
                       <p className="text-white/50 text-sm mt-1">Founder image would appear here</p>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 
@@ -184,7 +186,7 @@ const About = () => {
                   <div className="flex items-center">
                     <BarChart className="text-marvel-red mr-3" size={24} />
                     <div>
-                      <div className="text-2xl font-bold text-white">10+ Years</div>
+                      <div className="text-2xl font-bold text-white">2 Years</div>
                       <div className="text-white/60 text-sm">Of Excellence</div>
                     </div>
                   </div>
@@ -204,15 +206,22 @@ const About = () => {
               </h2>
               
               <p className="text-white/70 mb-6">
-                Marvel Designs was founded in 2013 with a simple mission: to create digital experiences that are both visually stunning and strategically effective. What began as a small team of passionate designers has grown into a full-service digital agency with a global client base.
+              Marvel Customs began its journey on February 22, 2023, with a simple vision to blend creativity and technology into 
+              something truly impactful. Founded by Alpha (Athul) , a passionate creator with a love for design, development, 
+              and gaming, Marvel Customs was built to offer unique solutions in the digital space.
               </p>
               
               <p className="text-white/70 mb-6">
-                Over the years, we've refined our approach to blend cutting-edge technology with timeless design principles. Our work spans industries from technology to healthcare, retail to education, always maintaining our commitment to excellence and innovation.
+              What started as a small idea quickly evolved into a full-fledged creative studio, delivering a wide range of services including 
+              3D design, UI/UX, web development, game scripting, and brand building. We’ve worked with gamers,businesses, 
+              and content creators to craft custom experiences that are not only functional but unforgettable.
               </p>
               
               <p className="text-white/70 mb-8">
-                Today, we continue to push the boundaries of what's possible in digital design and development, helping our clients stand out in an increasingly competitive landscape.
+              Driven by innovation and attention to detail, our team is committed to helping clients bring their ideas to life
+              whether it’s a stunning visual, a powerful website, or a fully customized FiveM server.
+
+            🎯 At Marvel Customs, your vision becomes our mission.
               </p>
               
               <Link
@@ -264,7 +273,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Team Section */}
+      {/* Our Team Section
       <section className="bg-marvel-black py-20">
         <div className="section-container">
           <motion.div
@@ -311,7 +320,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="bg-gradient-to-r from-marvel-black to-marvel-dark-gray py-20">
@@ -327,8 +336,11 @@ const About = () => {
               Ready to Work With Us?
             </h2>
             <p className="text-xl text-white/70 mb-10">
-              Let's collaborate to bring your digital vision to life with our expertise in design and development.
-            </p>
+            Let’s collaborate and bring your digital vision to life. Whether it’s a bold design, a custom development project, 
+            or a unique gaming experience <br />  
+          <strong className="text-white">Marvel Customs has the creativity and skill to make it happen.</strong>
+          </p>
+
             <Link to="/contact" className="marvel-button text-lg px-8 py-4">
               Start a Project
             </Link>
