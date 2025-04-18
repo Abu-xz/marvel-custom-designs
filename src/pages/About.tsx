@@ -245,7 +245,7 @@ const About = () => {
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeInUp}
           >
-            <h2 className="section-title">Our Values</h2>
+            <h2 className="section-title">Core Principles</h2>
             <p className="section-subtitle mx-auto">
               These core principles guide our approach to every project and client relationship.
             </p>
