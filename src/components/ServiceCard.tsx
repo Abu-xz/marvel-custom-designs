@@ -1,16 +1,20 @@
-
-import React from 'react';
-import { motion } from 'framer-motion';
-import { LucideIcon } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { LucideIcon } from "lucide-react";
 
 interface ServiceCardProps {
-  icon: React.ReactNode;
+  imageSrc: string;
   title: string;
   description: string;
   features: string[];
 }
 
-const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, features }) => {
+const ServiceCard: React.FC<ServiceCardProps> = ({
+  imageSrc,
+  title,
+  description,
+  features,
+}) => {
   return (
     <motion.div
       className="marvel-card group h-full"
@@ -18,25 +22,27 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, fea
       transition={{ duration: 0.3 }}
     >
       <div className="p-8 flex flex-col h-full">
-        <div className="w-14 h-14 rounded-lg bg-marvel-red/10 flex items-center justify-center mb-6 group-hover:bg-marvel-red/20 transition-colors duration-300">
-          <motion.div
-            initial={{ rotate: 0 }}
-            whileHover={{ rotate: 10 }}
-            transition={{ duration: 0.2 }}
-          >
-            {icon}
-          </motion.div>
+        {/* Image block */}
+        <div className="w-full h-50 rounded-xl  mb-6">
+          <motion.img
+            src={imageSrc}
+            alt={title}
+            className="w-full h-full object-cover rounded-xl"
+            initial={{ scale: 1 }}
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
+          />
         </div>
-        
+
         <h3 className="text-2xl font-bold text-white mb-3">{title}</h3>
-        
+
         <p className="text-white/70 mb-6">{description}</p>
-        
+
         <div className="mt-auto">
           <div className="mb-6">
             <div className="h-px bg-gradient-to-r from-marvel-red/20 to-transparent" />
           </div>
-          
+
           <ul className="space-y-2">
             {features.map((feature, index) => (
               <li key={index} className="flex items-center">
