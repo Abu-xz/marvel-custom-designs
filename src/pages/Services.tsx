@@ -70,7 +70,7 @@ const Services = () => {
       ],
     },
     {
-      imageSrc: "/branding.png",
+      imageSrc: "/Branding.png",
       title: "Branding",
       description:
         "Building memorable brands with strategic visuals and messaging.",
@@ -94,7 +94,7 @@ const Services = () => {
       ],
     },
     {
-      imageSrc: "/brochure.png",
+      imageSrc: "/Brochure.png",
       title: "Brochure Design",
       description:
         "Designing professional brochures that effectively showcase your services or products.",
