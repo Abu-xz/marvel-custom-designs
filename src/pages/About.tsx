@@ -187,7 +187,7 @@ const About = () => {
                     <BarChart className="text-marvel-red mr-3" size={24} />
                     <div>
                       <div className="text-2xl font-bold text-white">2 Years</div>
-                      <div className="text-white/60 text-sm">Of Excellence</div>
+                      <div className="text-white/60 text-sm">Of Success</div>
                     </div>
                   </div>
                 </motion.div>
