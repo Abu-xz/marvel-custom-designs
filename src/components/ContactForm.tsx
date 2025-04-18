@@ -10,8 +10,34 @@ const ContactForm = () => {
     service: "",
     message: "",
   });
+
+  const [formErrors, setFormErrors] = useState({
+    name: "",
+    email: "",
+    service: "",
+    message: "",
+  });
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [focused, setFocused] = useState<string | null>(null);
+
+  const validateAllFields = () => {
+    const errors = {
+      name: formData.name.trim() ? "" : "Name is required.",
+      email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)
+        ? ""
+        : "Please enter a valid email address.",
+      service: formData.service.trim() ? "" : "Please select a service.",
+      message:
+        formData.message.trim().length >= 10
+          ? ""
+          : "Message must be at least 10 characters.",
+    };
+
+    setFormErrors(errors);
+
+    return Object.values(errors).every((err) => err === "");
+  };
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -19,30 +45,59 @@ const ContactForm = () => {
     >
   ) => {
     const { name, value } = e.target;
+    // Implement validation
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    if (!validateAllFields()) {
+      toast.error("Please fix the errors before submitting.");
       setIsSubmitting(false);
-      toast.success("Message sent successfully!", {
-        description: "We will get back to you as soon as possible.",
-        style: {
-          color: "black",
-          backgroundColor: "green",
-        },
+      return;
+    }
+
+    const web3formData = new FormData();
+    web3formData.append("access_key", "a4262795-3666-4910-b1f5-81605763877a");
+    web3formData.append("name", formData.name);
+    web3formData.append("email", formData.email);
+    web3formData.append("service", formData.service);
+    web3formData.append("message", formData.message);
+    web3formData.append("subject", "You have a message - Stephan Nedumbally");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: web3formData,
       });
-      setFormData({
-        name: "",
-        email: "",
-        service: "",
-        message: "",
-      });
-    }, 1500);
+      const data = await response.json();
+      console.log(data);
+
+      if (data.success) {
+        setIsSubmitting(false);
+        toast.success("Message sent successfully!", {
+          description: "We will get back to you as soon as possible.",
+          style: {
+            color: "black",
+            backgroundColor: "green",
+          },
+        });
+
+        setFormData({ name: "", email: "", service: "", message: "" });
+        setFormErrors({ name: "", email: "", service: "", message: "" });
+      } else {
+        toast.error("Failed to send. Try again.");
+        setFormData({ name: "", email: "", service: "", message: "" });
+        setFormErrors({ name: "", email: "", service: "", message: "" });
+      }
+    } catch (err) {
+      console.log(err);
+      toast.error(err.message);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const formFields = [
@@ -134,6 +189,9 @@ const ContactForm = () => {
                   />
                 )}
               </motion.div>
+              {formErrors[field.name] && (
+                <p className="text-red-500 text-sm">{formErrors[field.name]}</p>
+              )}
             </div>
           ))}
 
@@ -161,6 +219,9 @@ const ContactForm = () => {
                 onBlur={() => setFocused(null)}
               />
             </motion.div>
+            {formErrors.message && (
+              <p className="text-red-400 text-sm">{formErrors.message}</p>
+            )}
           </div>
 
           <motion.button
