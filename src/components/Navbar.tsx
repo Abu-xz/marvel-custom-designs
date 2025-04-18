@@ -82,7 +82,7 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="text-marvel-red">Marvel</span> Designs
+            <span className="text-marvel-red">Marvel</span> Customs  
           </motion.div>
         </Link>
 

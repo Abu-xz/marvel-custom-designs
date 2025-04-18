@@ -1,74 +1,100 @@
-<<<<<<< HEAD
-# marvel-customs-designs
-This is our new portfolio website to showcase our freelance project 
-=======
-# Welcome to your Lovable project
+Here's a **README.md** file for your project:  
 
-## Project info
+---
 
-**URL**: https://lovable.dev/projects/abdcfd7e-a620-467e-85d4-b0a76f4af358
+# **Marvel Customs Designs 🚀**  
+_A sleek and professional portfolio for our freelance web development and design services._
 
-## How can I edit this code?
+![Vercel Deployment](https://img.shields.io/badge/Hosted%20on-Vercel-blue)  
+![React](https://img.shields.io/badge/React-18-blue)  
+![TypeScript](https://img.shields.io/badge/TypeScript-✓-blue)  
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-✓-blue)  
+![Framer Motion](https://img.shields.io/badge/Framer%20Motion-✓-blue)  
+![ShadCN UI](https://img.shields.io/badge/ShadCN%20UI-✓-blue)  
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## **🚀 Live Demo**  
+🔗 [View the live site on Vercel](https://your-vercel-link.vercel.app)  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/abdcfd7e-a620-467e-85d4-b0a76f4af358) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## **📌 Features**  
+✅ **Modern UI** with **ShadCN UI** and **Tailwind CSS**  
+✅ **Smooth Animations** powered by **Framer Motion**  
+✅ **Fully Responsive** across all devices  
+✅ **Dark Mode Support**  
+✅ **SEO & Performance Optimized**  
+✅ **Contact Form** for direct inquiries  
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## **🛠 Tech Stack**  
+- **Frontend:** React (TypeScript)  
+- **Styling:** Tailwind CSS, ShadCN UI  
+- **Animations:** Framer Motion  
+- **Hosting:** Vercel  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## **📦 Installation & Setup**  
+1. **Clone the repo**  
+   ```sh
+   git clone https://github.com/Abu-xz/marvel-customs-designs.git
+   cd marvel-customs-designs
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+2. **Install dependencies**  
+   ```sh
+   npm install
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+3. **Start the development server**  
+   ```sh
+   npm run dev
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+4. **Open in Browser**  
+   The project runs on `http://localhost:5173/` (Vite Default).  
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+---
+
+## **⚙️ Environment Variables (If Needed)**  
+Create a `.env` file in the root directory and add:  
+```
+VITE_API_URL=your_api_url
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## **🚀 Deployment**  
+1. **Push to GitHub**  
+   ```sh
+   git push origin main
+   ```
 
-**Use GitHub Codespaces**
+2. **Deploy on Vercel**  
+   - Go to [Vercel](https://vercel.com)  
+   - Import your GitHub repository  
+   - Click **Deploy**  
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## **📸 Screenshots**  
+(Add some UI screenshots here)
 
-This project is built with .
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## **🛠 Future Improvements**  
+🔹 Add 3D Elements (with Three.js in the future)  
+🔹 Blog or Case Study Section  
+🔹 More Interactive UI Components  
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/abdcfd7e-a620-467e-85d4-b0a76f4af358) and click on Share -> Publish.
+## **📝 License**  
+This project is **open-source** under the **MIT License**.  
 
-## I want to use a custom domain - is that possible?
+---
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
->>>>>>> dc1f3c5 (project files added)
+Let me know if you need any modifications! 🚀🔥
