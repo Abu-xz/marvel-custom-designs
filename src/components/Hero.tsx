@@ -80,7 +80,7 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.3 }}
         >
           <Link
-            to="/contact"
+            to="/services"
             className="marvel-button group"
           >
             Start Your Project
