@@ -43,10 +43,10 @@ const Index = () => {
   ];
 
   const stats = [
-    { number: "10+", label: "Years Experience" },
-    { number: "200+", label: "Projects Completed" },
-    { number: "50+", label: "Happy Clients" },
-    { number: "15", label: "Design Awards" },
+    { number: '2', label: 'Years Experience' },
+    { number: '100+', label: 'Projects Completed' },
+    { number: '70+', label: 'Happy Clients' },
+    { number: '20+', label: 'Staffs' }
   ];
 
   return (
@@ -68,7 +68,7 @@ const Index = () => {
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeInUp}
           >
-            <h2 className="section-title">Our Expertise</h2>
+            <h2 className="section-title">Expert Areas</h2>
             <p className="section-subtitle mx-auto">
               We combine technical expertise with creative vision to deliver
               exceptional digital experiences.
@@ -276,7 +276,7 @@ const Index = () => {
               your brand and drives results.
             </p>
             <Link to="/contact" className="marvel-button text-lg px-8 py-4">
-              Start Your Project
+              Start Building Your Project
             </Link>
           </motion.div>
         </div>
