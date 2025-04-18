@@ -58,7 +58,7 @@ const Index = () => {
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeInUp}
           >
-            <h2 className="section-title">Our Expertise</h2>
+            <h2 className="section-title">Expert Areas</h2>
             <p className="section-subtitle mx-auto">
               We combine technical expertise with creative vision to deliver exceptional digital experiences.
             </p>
