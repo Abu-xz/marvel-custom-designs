@@ -10,6 +10,7 @@ import {
   Twitter,
   Facebook,
   Linkedin,
+  MessageCircle,
 } from "lucide-react";
 import ContactForm from "../components/ContactForm";
 
@@ -43,10 +44,9 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: <Instagram size={20} />, name: "Instagram", url: "#" },
-    { icon: <Twitter size={20} />, name: "Twitter", url: "#" },
-    { icon: <Facebook size={20} />, name: "Facebook", url: "#" },
-    { icon: <Linkedin size={20} />, name: "LinkedIn", url: "#" },
+    { icon: <Instagram size={20} />, name: "Instagram", url: "https://www.instagram.com/marvel_custom_designs/" },
+    { icon: <MessageCircle size={20} />, name: "Whatsapp", url: "https://wa.me//+918089984763" },
+    { icon: <Linkedin size={20} />, name: "LinkedIn", url: "https://www.linkedin.com/" },
   ];
 
   return (
