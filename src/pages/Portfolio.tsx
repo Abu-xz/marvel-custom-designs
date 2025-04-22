@@ -25,6 +25,19 @@ const Portfolio = () => {
     },
     {
       id: 2,
+      title: "Tva Gang Vehilcle 2",
+      category: "3D Modeling",
+      imageSrc: "/works/tva2.jpg",
+      description: "Custom Made Work Done For Gang Tva",
+      tags: ["Blender","Rendering"],
+      filter: "3d",
+      demo: "https://example.com/demo/3d-product-render",
+      features: ["3D Modeling", "High-Res Rendering", "Product Visualization"]
+    },
+  
+    // Bot Projects
+    {
+      id: 10,
       title: "FiveM SQL Bot",
       category: "Bot Development",
       imageSrc: "/works/sqlbot.png",
@@ -34,6 +47,8 @@ const Portfolio = () => {
       demo: "https://github.com/yourprofile/telegram-order-bot",
       features: ["10+ Commands", "Manage FiveM Server"]
     },
+  
+    // Design Projects
     {
       id: 3,
       title: "Choppee's Rings",
@@ -41,7 +56,7 @@ const Portfolio = () => {
       imageSrc: "/works/chopees.png",
       description: "Creative snack packaging design for Choppee’s Rings, blending bold visuals and brand identity.",
       tags: ["Package Design", "Snacks"],
-      filter: "package",
+      filter: "desgins",
       demo: "https://example.com/demo/brand-identity-kit",
       features: []
     },
@@ -52,7 +67,7 @@ const Portfolio = () => {
       imageSrc: "/works/compprofile.png",
       description: "Professionally designed corporate brochure for Nesmee, tailored for both print and digital use.",
       tags: ["InDesign", "Typography", "Print Design"],
-      filter: "companyprofile",
+      filter: "desgins",
       demo: "/demos/brochure-sample.pdf",
       features: ["Bi-Fold Design", "Print Ready", "Custom Layouts", "High-Quality Typography"]
     },
@@ -63,10 +78,23 @@ const Portfolio = () => {
       imageSrc: "/works/brochure.png",
       description: "Elegant and informative brochure design for Edu Connect, crafted for educational services.",
       tags: ["InDesign", "Typography", "Print Design"],
-      filter: "brochure",
+      filter: "desgins",
       demo: "/demos/brochure-sample.pdf",
       features: ["Bi-Fold Design", "Print Ready", "Custom Layouts", "High-Quality Typography"]
     },
+    {
+      id: 8,
+      title: "Vertex",
+      category: "Logo Design",
+      imageSrc: "/works/vertex.png",
+      description: "Modern and professional logo design created for the Vertex brand, complete with vector assets.",
+      tags: ["Illustrator", "Brand Identity", "Vector Design"],
+      filter: "desgins",
+      demo: "/demos/logo-portfolio.pdf",
+      features: ["Logo Variants", "Vector Files"]
+    },
+  
+    // FiveM Projects
     {
       id: 6,
       title: "Unity Verse Roleplay",
@@ -89,64 +117,18 @@ const Portfolio = () => {
       demo: "https://youtu.be/fivem-server-demo",
       features: ["ESX", "RP Server Setup", "Custom Scripts", "Vehicle Mods", "Job Systems"]
     },
-    {
-      id: 8,
-      title: "Vertex",
-      category: "Logo Design",
-      imageSrc: "/works/vertex.png",
-      description: "Modern and professional logo design created for the Vertex brand, complete with vector assets.",
-      tags: ["Illustrator", "Brand Identity", "Vector Design"],
-      filter: "logo",
-      demo: "/demos/logo-portfolio.pdf",
-      features: ["Logo Variants", "Vector Files"]
-    },
+  
+    // Web Projects
     {
       id: 9,
-      title: "EchoFest Promo Posters",
-      category: "Poster Designing",
-      imageSrc: "placeholder.svg",
-      description:
-        "We create posters for events, advertisements, awareness campaigns, and more.",
-      tags: ["Photoshop", "Layout Design", "Creative Direction"],
-      filter: "poster",
-      demo: "/demos/poster-samples.zip",
-      features: ["Event Branding", "High-Resolution Posters", "Digital + Print Ready", "Creative Art Direction"]
-    },
-    {
-      id: 10,
-      title: "FlowUX App Interface",
-      category: "UI/UX",
-      imageSrc: "placeholder.svg",
-      description:
-        "We design user-friendly interfaces and engaging user experiences for websites and mobile apps.",
-      tags: ["Figma", "User Flow", "Wireframing"],
-      filter: "ui",
-      demo: "https://www.figma.com/file/xyz123/uiux-sample-project",
-      features: ["Wireframes", "User Flow Charts", "Mobile-First Design", "Component Library"]
-    },
-    {
-      id: 11,
       title: "UrbanStyle Web App",
       category: "Web Development",
       imageSrc: "placeholder.svg",
-      description:
-        "We build websites of all types – portfolios, e-commerce, business sites – with responsive and modern designs.",
+      description: "We build websites of all types – portfolios, e-commerce, business sites – with responsive and modern designs.",
       tags: ["HTML", "CSS", "JavaScript", "React"],
       filter: "web",
       demo: "https://urbanstyle.vercel.app",
       features: ["Responsive Layout", "Frontend + Backend", "API Integration", "SEO Optimized"]
-    },
-    {
-      id: 12,
-      title: "Tva Gang Vehilcle 2",
-      category: "3D Modeling",
-      imageSrc: "/works/tva2.jpg",
-      description:
-        "Custom Made Work Done For Gang Tva",
-      tags: ["Blender","Rendering"],
-      filter: "3d",
-      demo: "https://example.com/demo/3d-product-render",
-      features: ["3D Modeling", "High-Res Rendering", "Product Visualization"]
     }
   ];
   
@@ -158,11 +140,11 @@ const Portfolio = () => {
 
   const filters = [
     { id: "all", label: "All Projects" },
-    { id: "web", label: "Web" },
-    { id: "ui", label: "UI/UX" },
+    { id: "desgins", label: "Designs" },
     { id: "3d", label: "3D Modeling" },
-    { id: "branding", label: "Branding" },
-    { id: "app", label: "Apps" },
+    { id: "web", label: "Web" },
+    { id: "fivem", label: "FiveM Development" },
+   
   ];
 
   const containerVariants = {
