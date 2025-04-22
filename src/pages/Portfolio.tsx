@@ -14,99 +14,91 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: "Tva Gang Vehilcle",
+      title: "Tva Gang Vehicle",
       category: "3D Modeling",
       imageSrc: "/works/tva1.jpg",
-      description:
-        "Custom Made Work Done For Gang Tva",
-      tags: ["Blender","Rendering"],
+      description: "Custom 3D modeled and rendered gang vehicle for the TVA crew in FiveM.",
+      tags: ["Blender", "Rendering"],
       filter: "3d",
       demo: "https://example.com/demo/3d-product-render",
       features: ["3D Modeling", "High-Res Rendering", "Product Visualization"]
     },
     {
       id: 2,
-      title: "Fivem Sql Bot ",
+      title: "FiveM SQL Bot",
       category: "Bot Development",
       imageSrc: "/works/sqlbot.png",
-      description:
-        "Sql Based discord bot made for managing the FiveM Server from the discord itself",
-      tags: ["Dicord Js", "Node Js"],
+      description: "A powerful SQL-based Discord bot to manage FiveM server tasks directly from Discord.",
+      tags: ["Discord.js", "Node.js"],
       filter: "bot",
       demo: "https://github.com/yourprofile/telegram-order-bot",
-      features: [ "10+ Commands", "Manage FiveM Server"]
+      features: ["10+ Commands", "Manage FiveM Server"]
     },
     {
       id: 3,
-      title: "Nova Brand Kit",
-      category: "Branding",
-      imageSrc: "placeholder.svg",
-      description:
-        "We handle all kinds of branding projects including brand strategy, logo creation, and visual identity design.",
-      tags: ["Logo Design", "Brand Strategy", "Visual Identity"],
-      filter: "branding",
+      title: "Choppee's Rings",
+      category: "Packet Designing",
+      imageSrc: "/works/chopees.png",
+      description: "Creative snack packaging design for Choppee’s Rings, blending bold visuals and brand identity.",
+      tags: ["Package Design", "Snacks"],
+      filter: "package",
       demo: "https://example.com/demo/brand-identity-kit",
-      features: ["Logo Pack", "Typography Set", "Color Palette", "Brand Guidelines"]
+      features: []
     },
     {
       id: 4,
-      title: "ZenFold Brochure",
-      category: "Brochure",
-      imageSrc: "placeholder.svg",
-      description:
-        "We design brochures of all types – bi-fold, tri-fold, catalogs – for both digital and print use.",
+      title: "Nesmee",
+      category: "Company Profile",
+      imageSrc: "/works/compprofile.png",
+      description: "Professionally designed corporate brochure for Nesmee, tailored for both print and digital use.",
+      tags: ["InDesign", "Typography", "Print Design"],
+      filter: "companyprofile",
+      demo: "/demos/brochure-sample.pdf",
+      features: ["Bi-Fold Design", "Print Ready", "Custom Layouts", "High-Quality Typography"]
+    },
+    {
+      id: 5,
+      title: "Edu Connect",
+      category: "Brochure Designing",
+      imageSrc: "/works/brochure.png",
+      description: "Elegant and informative brochure design for Edu Connect, crafted for educational services.",
       tags: ["InDesign", "Typography", "Print Design"],
       filter: "brochure",
       demo: "/demos/brochure-sample.pdf",
       features: ["Bi-Fold Design", "Print Ready", "Custom Layouts", "High-Quality Typography"]
     },
     {
-      id: 5,
-      title: "FastForm Entry Suite",
-      category: "Data Entry",
-      imageSrc: "placeholder.svg",
-      description:
-        "We take up all types of data entry tasks with accuracy and speed, including Excel automation and form processing.",
-      tags: ["Excel", "Macros", "VBA"],
-      filter: "data",
-      demo: "/demos/excel-macro-demo.xlsx",
-      features: ["Automated Entry", "Macro Scripting", "Data Cleaning", "Form Processing"]
-    },
-    {
       id: 6,
-      title: "Liberty RP Server",
+      title: "Unity Verse Roleplay",
       category: "FiveM Development",
-      imageSrc: "placeholder.svg",
-      description:
-        "We offer full FiveM server development including scripting, customization, and roleplay setups.",
-      tags: ["Lua", "FiveM", "GTA V Mods"],
+      imageSrc: "/works/unityverse.png",
+      description: "Full-featured FiveM roleplay server setup with custom scripts, job systems, and vehicle mods.",
+      tags: ["Lua", "FiveM", "GTA V"],
       filter: "fivem",
       demo: "https://youtu.be/fivem-server-demo",
-      features: ["RP Server Setup", "Custom Scripts", "Vehicle Mods", "Job Systems"]
+      features: ["ESX", "RP Server Setup", "Custom Scripts", "Vehicle Mods", "Job Systems"]
     },
     {
       id: 7,
-      title: "MarkeTune Logo Set",
-      category: "Logo Design",
-      imageSrc: "placeholder.svg",
-      description:
-        "We design logos for all kinds of brands, businesses, and events, tailored to your identity.",
-      tags: ["Illustrator", "Brand Identity", "Vector Design"],
-      filter: "logo",
-      demo: "/demos/logo-portfolio.pdf",
-      features: ["Logo Variants", "Vector Files", "Monogram + Wordmark", "Client Revisions"]
+      title: "Unity Verse Cinematics",
+      category: "FiveM Development",
+      imageSrc: "/works/uvc.png",
+      description: "Custom cinematic scenes and promotional visuals crafted for the Unity Verse RP community.",
+      tags: ["Lua", "FiveM", "GTA V"],
+      filter: "fivem",
+      demo: "https://youtu.be/fivem-server-demo",
+      features: ["ESX", "RP Server Setup", "Custom Scripts", "Vehicle Mods", "Job Systems"]
     },
     {
       id: 8,
-      title: "GreenBox Packaging",
-      category: "Packet Design",
-      imageSrc: "placeholder.svg",
-      description:
-        "We design attractive and informative packet/packaging designs for any kind of product.",
-      tags: ["Packaging Design", "Illustrator", "Branding"],
-      filter: "packet",
-      demo: "https://example.com/demo/packet-design-gallery",
-      features: ["3D Mockups", "Custom Die-lines", "Nutritional Labels", "Retail-Ready"]
+      title: "Vertex",
+      category: "Logo Design",
+      imageSrc: "/works/vertex.png",
+      description: "Modern and professional logo design created for the Vertex brand, complete with vector assets.",
+      tags: ["Illustrator", "Brand Identity", "Vector Design"],
+      filter: "logo",
+      demo: "/demos/logo-portfolio.pdf",
+      features: ["Logo Variants", "Vector Files"]
     },
     {
       id: 9,
