@@ -145,12 +145,14 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
                   )}
 
                   <div className="flex space-x-4">
+                    {demo !== '' &&
                     <Link to={demo} className="marvel-button px-4 py-2 text-sm">
                       View Live Site
                     </Link>
-                    <button className="marvel-button-outline px-4 py-2 text-sm">
+                     }
+                    {/* <button className="marvel-button-outline px-4 py-2 text-sm">
                       Case Study
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>
