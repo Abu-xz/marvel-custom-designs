@@ -206,30 +206,8 @@ const Index = () => {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6 }}
             >
-              <div className="aspect-[4/3] rounded-xl overflow-hidden glass-panel">
-                <div className="w-full h-full bg-marvel-gray/30 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-16 h-16 rounded-full bg-marvel-red/20 mx-auto flex items-center justify-center mb-4">
-                      <motion.div
-                        animate={{ rotate: 360 }}
-                        transition={{
-                          duration: 8,
-                          repeat: Infinity,
-                          ease: "linear",
-                        }}
-                        className="w-8 h-8 rounded-full bg-marvel-red flex items-center justify-center"
-                      >
-                        <span className="text-white font-bold">M</span>
-                      </motion.div>
-                    </div>
-                    <p className="text-white/90 font-medium">
-                      Demo Visualization
-                    </p>
-                    <p className="text-white/50 text-sm mt-1">
-                      Interactive 3D model would appear here
-                    </p>
-                  </div>
-                </div>
+              <div className="aspect-[2\4] rounded-xl overflow-hidden glass-panel">
+                  <img src="/marvelwall.jpg" alt="Marvel Custom Designs" />
               </div>
 
               {/* Floating elements */}
