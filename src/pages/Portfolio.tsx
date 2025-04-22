@@ -14,27 +14,27 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: "ProductX Visualizer",
+      title: "Tva Gang Vehilcle",
       category: "3D Modeling",
-      imageSrc: "/3d_modeling.png",
+      imageSrc: "/works/tva1.jpg",
       description:
-        "We provide all kinds of 3D modeling and rendering services including products, architecture, and concept designs.",
-      tags: ["Blender", "3ds Max", "Rendering"],
+        "Custom Made Work Done For Gang Tva",
+      tags: ["Blender","Rendering"],
       filter: "3d",
       demo: "https://example.com/demo/3d-product-render",
-      features: ["3D Modeling", "High-Res Rendering", "Product Visualization", "Custom Animations"]
+      features: ["3D Modeling", "High-Res Rendering", "Product Visualization"]
     },
     {
       id: 2,
-      title: "OrderFlow Bot",
+      title: "Fivem Sql Bot ",
       category: "Bot Development",
-      imageSrc: "/bot_development",
+      imageSrc: "/works/sqlbot.png",
       description:
-        "We build various custom bots for platforms like Telegram to automate tasks, manage users, or handle orders.",
-      tags: ["Python", "Telegram API", "Automation"],
+        "Sql Based discord bot made for managing the FiveM Server from the discord itself",
+      tags: ["Dicord Js", "Node Js"],
       filter: "bot",
       demo: "https://github.com/yourprofile/telegram-order-bot",
-      features: ["Telegram Bot", "Order Handling", "Auto Notifications", "User Management"]
+      features: [ "10+ Commands", "Manage FiveM Server"]
     },
     {
       id: 3,
@@ -143,6 +143,18 @@ const Portfolio = () => {
       filter: "web",
       demo: "https://urbanstyle.vercel.app",
       features: ["Responsive Layout", "Frontend + Backend", "API Integration", "SEO Optimized"]
+    },
+    {
+      id: 12,
+      title: "Tva Gang Vehilcle 2",
+      category: "3D Modeling",
+      imageSrc: "/works/tva2.jpg",
+      description:
+        "Custom Made Work Done For Gang Tva",
+      tags: ["Blender","Rendering"],
+      filter: "3d",
+      demo: "https://example.com/demo/3d-product-render",
+      features: ["3D Modeling", "High-Res Rendering", "Product Visualization"]
     }
   ];
   
