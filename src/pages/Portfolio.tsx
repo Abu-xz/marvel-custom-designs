@@ -115,7 +115,7 @@ const Portfolio = () => {
         "Modern and professional logo design created for the Vertex brand, complete with vector assets.",
       tags: ["Illustrator", "Brand Identity", "Vector Design"],
       filter: "desgins",
-      demo: "https://vertexstudys.com/",
+      demo: "",
       features: ["Logo Variants", "Vector Files"],
     },
     // FiveM Projects
@@ -128,7 +128,7 @@ const Portfolio = () => {
         "Full-featured FiveM roleplay server setup with custom scripts, job systems, and vehicle mods.",
       tags: ["Lua", "FiveM", "GTA V"],
       filter: "fivem",
-      demo: "https://youtu.be/fivem-server-demo",
+      demo: "",
       features: [
         "ESX",
         "RP Server Setup",
@@ -146,7 +146,7 @@ const Portfolio = () => {
         "Custom cinematic scenes and promotional visuals crafted for the Unity Verse RP community.",
       tags: ["Lua", "FiveM", "GTA V"],
       filter: "fivem",
-      demo: "https://youtu.be/fivem-server-demo",
+      demo: "",
       features: [
         "ESX",
         "RP Server Setup",
@@ -163,7 +163,7 @@ const Portfolio = () => {
       imageSrc: "/works/urbangents.png",
       description:
         "We build websites of all types – portfolios, e-commerce, business sites – with responsive and modern designs.",
-      tags: ["HTML", "CSS", "JavaScript", "React"],
+      tags: ["HTML", "tailwind", "JavaScript", "ejs", 'express', 'mongodb'],
       filter: "web",
       demo: "",
       features: [
