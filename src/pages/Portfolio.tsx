@@ -331,22 +331,16 @@ const Portfolio = () => {
             {[
               {
                 quote:
-                  "Marvel Designs transformed our online presence with a website that perfectly captures our brand's essence. The team was professional, creative, and delivered beyond our expectations.",
-                author: "Sarah Johnson",
-                position: "Marketing Director, TechNova",
+                  "Your service is commendable. We congratulate you on behalf of Gokul Nagar Residence Association. We will contact you if we have any future projects. We will also be happy to recommend you to anyone we know who needs such services.We wish you all the best for your future endeavors.",
+                author: "Sudharsan S",
+                position: "President, Gokul Nagar Residence Association Palakkad",
               },
               {
                 quote:
-                  "The 3D modeling work Marvel Designs created for our product line helped us increase conversions by 45%. Their attention to detail and creative vision is unmatched.",
-                author: "Michael Chen",
-                position: "Product Manager, Innovate Inc.",
-              },
-              {
-                quote:
-                  "Working with Marvel Designs was seamless from start to finish. They took the time to understand our needs and delivered a solution that has received countless compliments from our customers.",
-                author: "Emma Rodriguez",
-                position: "CEO, Stellar Brands",
-              },
+                  "Your service has been truly commendable. On behalf of the Gokul Nagar Residence Association, we extend our heartfelt congratulations. We look forward to collaborating again on future projects and would gladly recommend your services to others. Wishing you continued success in all your future endeavors.",
+                author: "Sidhart",
+                position: "Founder, Vertex School of Science",
+              }          
             ].map((testimonial, index) => (
               <motion.div
                 key={index}
