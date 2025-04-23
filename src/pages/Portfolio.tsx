@@ -333,7 +333,7 @@ const Portfolio = () => {
                 quote:
                   "Your service is commendable. We congratulate you on behalf of Gokul Nagar Residence Association. We will contact you if we have any future projects. We will also be happy to recommend you to anyone we know who needs such services.We wish you all the best for your future endeavors.",
                 author: "Sudharsan S",
-                position: "President, Gokul Nagar Residence Association Palakkad",
+                position: "Treasurer, Gokul Nagar Residence Association Palakkad",
               },
               {
                 quote:
