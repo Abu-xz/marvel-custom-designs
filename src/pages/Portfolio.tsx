@@ -26,12 +26,11 @@ const Portfolio = () => {
       title: "Tva Gang Vehicle",
       category: "3D Modeling",
       imageSrc: "/works/tva1.jpg",
-      description:
-        "Custom 3D modeled and rendered gang vehicle for the TVA crew in FiveM.",
+      description: "Custom 3D modeled and rendered gang vehicle for the TVA crew in FiveM.",
       tags: ["Blender", "Rendering"],
       filter: "3d",
-      demo: "",
-      features: ["3D Modeling", "High-Res Rendering", "Product Visualization"],
+      demo: "https://example.com/demo/3d-product-render",
+      features: ["3D Modeling", "High-Res Rendering", "Product Visualization"]
     },
     {
       id: 2,
@@ -39,290 +38,108 @@ const Portfolio = () => {
       category: "3D Modeling",
       imageSrc: "/works/tva2.jpg",
       description: "Custom Made Work Done For Gang Tva",
-      tags: ["Blender", "Rendering"],
+      tags: ["Blender","Rendering"],
       filter: "3d",
-      demo: "",
-      features: ["3D Modeling", "High-Res Rendering", "Product Visualization"],
+      demo: "https://example.com/demo/3d-product-render",
+      features: ["3D Modeling", "High-Res Rendering", "Product Visualization"]
     },
-
+  
     // Bot Projects
     {
       id: 10,
       title: "FiveM SQL Bot",
       category: "Bot Development",
       imageSrc: "/works/sqlbot.png",
-      description:
-        "A powerful SQL-based Discord bot to manage FiveM server tasks directly from Discord.",
+      description: "A powerful SQL-based Discord bot to manage FiveM server tasks directly from Discord.",
       tags: ["Discord.js", "Node.js"],
       filter: "bot",
-      demo: "",
-      features: ["10+ Commands", "Manage FiveM Server"],
+      demo: "https://github.com/yourprofile/telegram-order-bot",
+      features: ["10+ Commands", "Manage FiveM Server"]
     },
-
+  
     // Design Projects
     {
       id: 3,
       title: "Choppee's Rings",
       category: "Packet Designing",
       imageSrc: "/works/chopees.png",
-      description:
-        "Creative snack packaging design for Choppee’s Rings, blending bold visuals and brand identity.",
+      description: "Creative snack packaging design for Choppee’s Rings, blending bold visuals and brand identity.",
       tags: ["Package Design", "Snacks"],
       filter: "desgins",
-      demo: "",
-      features: [],
+      demo: "https://example.com/demo/brand-identity-kit",
+      features: []
     },
     {
       id: 4,
       title: "Nesmee",
       category: "Company Profile",
       imageSrc: "/works/compprofile.png",
-      description:
-        "Professionally designed corporate brochure for Nesmee, tailored for both print and digital use.",
+      description: "Professionally designed corporate brochure for Nesmee, tailored for both print and digital use.",
       tags: ["InDesign", "Typography", "Print Design"],
       filter: "desgins",
-      demo: "",
-      features: [
-        "Bi-Fold Design",
-        "Print Ready",
-        "Custom Layouts",
-        "High-Quality Typography",
-      ],
+      demo: "/demos/brochure-sample.pdf",
+      features: ["Bi-Fold Design", "Print Ready", "Custom Layouts", "High-Quality Typography"]
     },
     {
       id: 5,
       title: "Edu Connect",
       category: "Brochure Designing",
       imageSrc: "/works/brochure.png",
-      description:
-        "Elegant and informative brochure design for Edu Connect, crafted for educational services.",
+      description: "Elegant and informative brochure design for Edu Connect, crafted for educational services.",
       tags: ["InDesign", "Typography", "Print Design"],
-      filter: "designs",
-      demo: "",
-      features: [
-        "Bi-Fold Design",
-        "Print Ready",
-        "Custom Layouts",
-        "High-Quality Typography",
-      ],
+      filter: "desgins",
+      demo: "/demos/brochure-sample.pdf",
+      features: ["Bi-Fold Design", "Print Ready", "Custom Layouts", "High-Quality Typography"]
     },
     {
       id: 8,
       title: "Vertex",
       category: "Logo Design",
       imageSrc: "/works/vertex.png",
-      description:
-        "Modern and professional logo design created for the Vertex brand, complete with vector assets.",
+      description: "Modern and professional logo design created for the Vertex brand, complete with vector assets.",
       tags: ["Illustrator", "Brand Identity", "Vector Design"],
       filter: "desgins",
-      demo: "",
-      features: ["Logo Variants", "Vector Files"],
+      demo: "/demos/logo-portfolio.pdf",
+      features: ["Logo Variants", "Vector Files"]
     },
+  
     // FiveM Projects
     {
       id: 6,
       title: "Unity Verse Roleplay",
       category: "FiveM Development",
       imageSrc: "/works/unityverse.png",
-      description:
-        "Full-featured FiveM roleplay server setup with custom scripts, job systems, and vehicle mods.",
+      description: "Full-featured FiveM roleplay server setup with custom scripts, job systems, and vehicle mods.",
       tags: ["Lua", "FiveM", "GTA V"],
       filter: "fivem",
-      demo: "",
-      features: [
-        "ESX",
-        "RP Server Setup",
-        "Custom Scripts",
-        "Vehicle Mods",
-        "Job Systems",
-      ],
+      demo: "https://youtu.be/fivem-server-demo",
+      features: ["ESX", "RP Server Setup", "Custom Scripts", "Vehicle Mods", "Job Systems"]
     },
     {
       id: 7,
       title: "Unity Verse Cinematics",
       category: "FiveM Development",
       imageSrc: "/works/uvc.png",
-      description:
-        "Custom cinematic scenes and promotional visuals crafted for the Unity Verse RP community.",
+      description: "Custom cinematic scenes and promotional visuals crafted for the Unity Verse RP community.",
       tags: ["Lua", "FiveM", "GTA V"],
       filter: "fivem",
-      demo: "",
-      features: [
-        "ESX",
-        "RP Server Setup",
-        "Custom Scripts",
-        "Vehicle Mods",
-        "Job Systems",
-      ],
+      demo: "https://youtu.be/fivem-server-demo",
+      features: ["ESX", "RP Server Setup", "Custom Scripts", "Vehicle Mods", "Job Systems"]
     },
+  
     // Web Projects
     {
       id: 9,
-      title: "UrbanGents E-Commerce",
+      title: "UrbanStyle Web App",
       category: "Web Development",
-      imageSrc: "/works/urbangents.png",
-      description:
-        "We build websites of all types – portfolios, e-commerce, business sites – with responsive and modern designs.",
-      tags: ["HTML", "tailwind", "JavaScript", "ejs", 'express', 'mongodb'],
+      imageSrc: "placeholder.svg",
+      description: "We build websites of all types – portfolios, e-commerce, business sites – with responsive and modern designs.",
+      tags: ["HTML", "CSS", "JavaScript", "React"],
       filter: "web",
-      demo: "",
-      features: [
-        "Responsive Layout",
-        "Frontend + Backend",
-        "API Integration",
-        "SEO Optimized",
-      ],
-    },
+      demo: "https://urbanstyle.vercel.app",
+      features: ["Responsive Layout", "Frontend + Backend", "API Integration", "SEO Optimized"]
+    }
   ];
-
-  // const sortedProjects = [
-  //   {
-  //     id: 1,
-  //     title: "Tva Gang Vehicle",
-  //     category: "3D Modeling",
-  //     imageSrc: "/works/tva1.jpg",
-  //     description:
-  //       "Custom 3D modeled and rendered gang vehicle for the TVA crew in FiveM.",
-  //     tags: ["Blender", "Rendering"],
-  //     filter: "3d",
-  //     demo: "",
-  //     features: ["3D Modeling", "High-Res Rendering", "Product Visualization"],
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "Tva Gang Vehilcle 2",
-  //     category: "3D Modeling",
-  //     imageSrc: "/works/tva2.jpg",
-  //     description: "Custom Made Work Done For Gang Tva",
-  //     tags: ["Blender", "Rendering"],
-  //     filter: "3d",
-  //     demo: "",
-  //     features: ["3D Modeling", "High-Res Rendering", "Product Visualization"],
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Choppee's Rings",
-  //     category: "Packet Designing",
-  //     imageSrc: "/works/chopees.png",
-  //     description:
-  //       "Creative snack packaging design for Choppee’s Rings, blending bold visuals and brand identity.",
-  //     tags: ["Package Design", "Snacks"],
-  //     filter: "desgins",
-  //     demo: "",
-  //     features: [],
-  //   },
-  //   {
-  //     id: 4,
-  //     title: "Nesmee",
-  //     category: "Company Profile",
-  //     imageSrc: "/works/compprofile.png",
-  //     description:
-  //       "Professionally designed corporate brochure for Nesmee, tailored for both print and digital use.",
-  //     tags: ["InDesign", "Typography", "Print Design"],
-  //     filter: "desgins",
-  //     demo: "",
-  //     features: [
-  //       "Bi-Fold Design",
-  //       "Print Ready",
-  //       "Custom Layouts",
-  //       "High-Quality Typography",
-  //     ],
-  //   },
-  //   {
-  //     id: 5,
-  //     title: "Edu Connect",
-  //     category: "Brochure Designing",
-  //     imageSrc: "/works/brochure.png",
-  //     description:
-  //       "Elegant and informative brochure design for Edu Connect, crafted for educational services.",
-  //     tags: ["InDesign", "Typography", "Print Design"],
-  //     filter: "designs",
-  //     demo: "",
-  //     features: [
-  //       "Bi-Fold Design",
-  //       "Print Ready",
-  //       "Custom Layouts",
-  //       "High-Quality Typography",
-  //     ],
-  //   },
-  //   {
-  //     id: 6,
-  //     title: "Unity Verse Roleplay",
-  //     category: "FiveM Development",
-  //     imageSrc: "/works/unityverse.png",
-  //     description:
-  //       "Full-featured FiveM roleplay server setup with custom scripts, job systems, and vehicle mods.",
-  //     tags: ["Lua", "FiveM", "GTA V"],
-  //     filter: "fivem",
-  //     demo: "https://youtu.be/fivem-server-demo",
-  //     features: [
-  //       "ESX",
-  //       "RP Server Setup",
-  //       "Custom Scripts",
-  //       "Vehicle Mods",
-  //       "Job Systems",
-  //     ],
-  //   },
-  //   {
-  //     id: 7,
-  //     title: "Unity Verse Cinematics",
-  //     category: "FiveM Development",
-  //     imageSrc: "/works/uvc.png",
-  //     description:
-  //       "Custom cinematic scenes and promotional visuals crafted for the Unity Verse RP community.",
-  //     tags: ["Lua", "FiveM", "GTA V"],
-  //     filter: "fivem",
-  //     demo: "https://youtu.be/fivem-server-demo",
-  //     features: [
-  //       "ESX",
-  //       "RP Server Setup",
-  //       "Custom Scripts",
-  //       "Vehicle Mods",
-  //       "Job Systems",
-  //     ],
-  //   },
-  //   {
-  //     id: 8,
-  //     title: "Vertex",
-  //     category: "Logo Design",
-  //     imageSrc: "/works/vertex.png",
-  //     description:
-  //       "Modern and professional logo design created for the Vertex brand, complete with vector assets.",
-  //     tags: ["Illustrator", "Brand Identity", "Vector Design"],
-  //     filter: "desgins",
-  //     demo: "https://vertexstudys.com/",
-  //     features: ["Logo Variants", "Vector Files"],
-  //   },
-  //   {
-  //     id: 9,
-  //     title: "UrbanGents E-Commerce",
-  //     category: "Web Development",
-  //     imageSrc: "/works/urbangents.png",
-  //     description:
-  //       "We build websites of all types – portfolios, e-commerce, business sites – with responsive and modern designs.",
-  //     tags: ["HTML", "CSS", "JavaScript", "React"],
-  //     filter: "web",
-  //     demo: "",
-  //     features: [
-  //       "Responsive Layout",
-  //       "Frontend + Backend",
-  //       "API Integration",
-  //       "SEO Optimized",
-  //     ],
-  //   },
-  //   {
-  //     id: 10,
-  //     title: "FiveM SQL Bot",
-  //     category: "Bot Development",
-  //     imageSrc: "/works/sqlbot.png",
-  //     description:
-  //       "A powerful SQL-based Discord bot to manage FiveM server tasks directly from Discord.",
-  //     tags: ["Discord.js", "Node.js"],
-  //     filter: "bot",
-  //     demo: "",
-  //     features: ["10+ Commands", "Manage FiveM Server"],
-  //   },
-  // ];
   
 
   const filteredProjects =
