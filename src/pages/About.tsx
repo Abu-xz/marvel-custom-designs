@@ -157,10 +157,7 @@ const About = () => {
                         <span className="text-white font-bold">M</span>
                       </motion.div>
                     </div>
-                    <p className="text-white/90 font-medium">Team Photo</p>
-                    <p className="text-white/50 text-sm mt-1">
-                      Team image would appear here
-                    </p>
+                   
                   </div>
                 </div>
               </div>
