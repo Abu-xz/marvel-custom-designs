@@ -1,7 +1,3 @@
-Here's a **README.md** file for your project:  
-
----
-
 # **Marvel Customs Designs 🚀**  
 _A sleek and professional portfolio for our freelance web development and design services._
 
@@ -15,7 +11,7 @@ _A sleek and professional portfolio for our freelance web development and design
 ---
 
 ## **🚀 Live Demo**  
-🔗 [View the live site on Vercel](https://marvel-custom-designs.vercel.app/)  
+🔗 [View the live site on](https://marvelcustomdesigns.in/)  
 
 ---
 
@@ -65,20 +61,6 @@ Create a `.env` file in the root directory and add:
 VITE_API_URL=your_api_url
 ```
 
----
-
-## **🚀 Deployment**  
-1. **Push to GitHub**  
-   ```sh
-   git push origin main
-   ```
-
-2. **Deploy on Vercel**  
-   - Go to [Vercel](https://vercel.com)  
-   - Import your GitHub repository  
-   - Click **Deploy**  
-
----
 
 ## **📸 Screenshots**  
 (Add some UI screenshots here)
@@ -92,9 +74,5 @@ VITE_API_URL=your_api_url
 
 ---
 
-## **📝 License**  
+## **📝 License** 
 This project is **open-source** under the **MIT License**.
-
----
-
-Let me know if you need any modifications! 🚀🔥
