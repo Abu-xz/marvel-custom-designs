@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface PortfolioItemProps {
   title: string;
@@ -9,6 +10,7 @@ interface PortfolioItemProps {
   description: string;
   tags: string[];
   features: string[];
+  demo: string;
 }
 
 const PortfolioItem: React.FC<PortfolioItemProps> = ({
@@ -18,6 +20,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
   description,
   tags,
   features,
+  demo,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -33,7 +36,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
         onClick={openModal}
       >
         <div className="marvel-card h-full overflow-hidden">
-          <div className="relative aspect-[4/3] overflow-hidden">
+          <div className="relative aspect-[3/3] overflow-hidden">
             <div
               className="w-full h-full bg-marvel-gray/50"
               style={{
@@ -142,12 +145,14 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
                   )}
 
                   <div className="flex space-x-4">
-                    <button className="marvel-button px-4 py-2 text-sm">
+                    {demo !== '' &&
+                    <Link to={demo} className="marvel-button px-4 py-2 text-sm">
                       View Live Site
-                    </button>
-                    <button className="marvel-button-outline px-4 py-2 text-sm">
+                    </Link>
+                     }
+                    {/* <button className="marvel-button-outline px-4 py-2 text-sm">
                       Case Study
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>
